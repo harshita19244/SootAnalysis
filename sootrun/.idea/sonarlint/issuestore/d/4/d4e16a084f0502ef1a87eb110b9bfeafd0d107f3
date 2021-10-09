@@ -1,0 +1,55 @@
+
+R
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(ê‚ƒ…
+<
+java:S1604"(Make this anonymous inner class a lambda(Ðóä«
+=
+java:S4738"$Use "java.util.Optional.of" instead.(¾åÑ°üÿÿÿÿ
+@
+java:S4738"'Use "java.util.Optional.empty" instead.(ŠâÃ£þÿÿÿÿ
+I
+java:S1133"5Do not forget to remove this deprecated code someday.(Ä‰Í—
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+N
+java:S1133"5Do not forget to remove this deprecated code someday.(–¡Òôùÿÿÿÿ
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+N
+java:S1133"5Do not forget to remove this deprecated code someday.(Ûùç÷ùÿÿÿÿ
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+N
+java:S1133"5Do not forget to remove this deprecated code someday.(×‹ñûÿÿÿÿ
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+u
+java:S1221"aEither override Object.equals(Object obj), or totally rename the method to prevent any confusion.(•¾ê
+N
+java:S1133"5Do not forget to remove this deprecated code someday.(–Ëžåúÿÿÿÿ
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+b
+java:S4042"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(ôìÈ
+g
+java:S4042"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(Â©„Ñýÿÿÿÿ
+I
+java:S1133"5Do not forget to remove this deprecated code someday.(þÒý
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+I
+java:S1133"5Do not forget to remove this deprecated code someday.( ùˆå
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+N
+java:S1133"5Do not forget to remove this deprecated code someday.(ÐÀâÁÿÿÿÿÿ
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+H
+java:S1133"5Do not forget to remove this deprecated code someday.(ŒØ¬Z
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+C
+java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ
+6
+java:S4738""Use "java.util.List.of()" instead.(Òê´ÿ

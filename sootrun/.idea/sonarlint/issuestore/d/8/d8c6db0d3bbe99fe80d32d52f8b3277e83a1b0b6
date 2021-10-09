@@ -1,0 +1,43 @@
+
+A
+java:S1604"(Make this anonymous inner class a lambda(ŠãúÖûÿÿÿÿ
+G
+java:S1121".Extract the assignment out of this expression.(èÙŠ¿ûÿÿÿÿ
+d
+java:S1206"PThis class overrides "equals()" and should therefore also override "hashCode()".(¨³®ý
+I
+java:S2065"0Remove the "transient" modifier from this field.(žìÝÒûÿÿÿÿ
+F
+java:S1135"2Complete the task associated to this TODO comment.(âþ‡
+F
+java:S1135"2Complete the task associated to this TODO comment.(âþ‡
+K
+java:S1135"2Complete the task associated to this TODO comment.(Òž·¯ûÿÿÿÿ
+K
+java:S1135"2Complete the task associated to this TODO comment.(ƒÃñÿýÿÿÿÿ
+C
+java:S1948"*Make "original" transient or serializable.(´¸ã°ùÿÿÿÿ
+;
+java:S1948"'Make "first" transient or serializable.(õ¹§Ù
+A
+java:S1948"(Make "second" transient or serializable.(——Š†ûÿÿÿÿ
+I
+java:S1133"5Do not forget to remove this deprecated code someday.(˜†Ž·
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+C
+java:S4738"*Use "java.util.function.Function" instead.(Ö¿ï‹øÿÿÿÿ
+C
+java:S4738"*Use "java.util.function.Function" instead.(Ëñ¾…ýÿÿÿÿ
+E
+java:S1948"1Make "forwardFunction" transient or serializable.(Ø›÷¾
+F
+java:S1948"2Make "backwardFunction" transient or serializable.(¥¦‡¿
+>
+java:S4738"*Use "java.util.function.Function" instead.(Ø›÷¾
+>
+java:S4738"*Use "java.util.function.Function" instead.(¥¦‡¿
+C
+java:S4738"*Use "java.util.function.Function" instead.(Ö¿ï‹øÿÿÿÿ
+C
+java:S4738"*Use "java.util.function.Function" instead.(Ëñ¾…ýÿÿÿÿ

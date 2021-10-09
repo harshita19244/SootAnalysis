@@ -1,0 +1,53 @@
+
+4
+java:S4738"!Use "java.util.Optional" instead.(˜ª³
+@
+java:S4738"'Use "java.util.Optional.empty" instead.(öÜÆ†ÿÿÿÿÿ
+E
+java:S4738",Use "java.util.Optional.ofNullable" instead.(Åö—²üÿÿÿÿ
+I
+java:S1133"5Do not forget to remove this deprecated code someday.(ê¼†Ý
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+;
+java:S4738""Use "java.util.List.of()" instead.(¬¼òÚþÿÿÿÿ
+?
+java:S4738"+Use "java.util.function.Predicate" instead.(èòÀ¬
+D
+java:S4738"+Use "java.util.function.Predicate" instead.(Ü‰ò—ýÿÿÿÿ
+>
+java:S4738"+Use "java.util.function.Predicate" instead.(²î²y
+D
+java:S4738"+Use "java.util.function.Predicate" instead.(þ³¯¤þÿÿÿÿ
+C
+java:S4738"*Use "java.util.function.Function" instead.(úšÀþÿÿÿÿ
+C
+java:S4738"*Use "java.util.function.Function" instead.(¤‘¨Òÿÿÿÿÿ
+=
+java:S4738"$Use "java.util.Optional.of" instead.(„×Ãòýÿÿÿÿ
+@
+java:S4738"'Use "java.util.Optional.empty" instead.(„×Ãòýÿÿÿÿ
+K
+java:S1135"2Complete the task associated to this TODO comment.(óä†¨ùÿÿÿÿ
+@
+java:S4738"'Use "java.util.Optional.empty" instead.(ŠâÃ£þÿÿÿÿ
+8
+java:S4738"$Use "java.util.Optional.of" instead.(æ›ô€
+@
+java:S4738"'Use "java.util.Optional.empty" instead.(ŠâÃ£þÿÿÿÿ
+F
+java:S1135"2Complete the task associated to this TODO comment.(ïî¥Ž
+8
+java:S4738"$Use "java.util.Optional.of" instead.(ÚæÄû
+=
+java:S4738"$Use "java.util.Optional.of" instead.(ÝÓÿ×ýÿÿÿÿ
+C
+java:S4738"*Use "java.util.function.Function" instead.(áŽß¾üÿÿÿÿ
+C
+java:S4738"*Use "java.util.function.Function" instead.(æ‘Ëøÿÿÿÿ
+>
+java:S4738"*Use "java.util.function.Function" instead.(¨–¿‚
+F
+java:S1135"2Complete the task associated to this TODO comment.(„ƒÌ¦
+Q
+java:S3985"8Remove this unused private "FromIterableFunction" class.(ù¦ÛÞþÿÿÿÿ

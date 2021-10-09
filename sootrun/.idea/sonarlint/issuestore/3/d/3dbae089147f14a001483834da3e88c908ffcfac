@@ -1,0 +1,23 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ö’óË
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ö’óË
+P	java:S125'"<This block of commented-out lines of code should be removed.(•ô¢{
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(·Ûß’ÿÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(·Ûß’ÿÿÿÿÿ
+Q	java:S125-"<This block of commented-out lines of code should be removed.(®À†İ
+V	java:S1251"<This block of commented-out lines of code should be removed.(È×âøüÿÿÿÿ
+V	java:S1255"<This block of commented-out lines of code should be removed.(£Â§¨ÿÿÿÿÿ
+N	java:S1068"9Replace this use of System.out or System.err by a logger.(£·®
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(Ö÷è­ûÿÿÿÿ
+V	java:S125@"<This block of commented-out lines of code should be removed.(Ôï¨üÿÿÿÿ
+P	java:S125N"<This block of commented-out lines of code should be removed.(Á­æ_
+S	java:S106R"9Replace this use of System.out or System.err by a logger.(Ü«Øöÿÿÿÿÿ
+V	java:S125S"<This block of commented-out lines of code should be removed.(áÓñ¾şÿÿÿÿ
+N	java:S106W"9Replace this use of System.out or System.err by a logger.(¬²âƒ
+S	java:S106Y"9Replace this use of System.out or System.err by a logger.(àÕüùÿÿÿÿ
+O
+java:S2175Z"4A "ArrayList<SootMethod>" cannot contain a "String".(ø¯×ÿÿÿÿÿ
+V	java:S125]"<This block of commented-out lines of code should be removed.(ŠÎ‡Ñüÿÿÿÿ
+V	java:S125b"<This block of commented-out lines of code should be removed.(®¥ÿËúÿÿÿÿ
+S	java:S106p"9Replace this use of System.out or System.err by a logger.(™Ó”şÿÿÿÿ
+P	java:S125q"<This block of commented-out lines of code should be removed.(éËË9
