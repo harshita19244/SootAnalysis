@@ -1,5 +1,4 @@
 import soot.*;
-import soot.jimple.toolkits.callgraph.CHATransformer;
 import soot.jimple.toolkits.callgraph.CallGraph;
 import soot.jimple.toolkits.callgraph.Targets;
 import soot.options.Options;
@@ -7,83 +6,65 @@ import java.util.*;
 
 public class CallGraphExample
 {
-    static HashMap<SootMethod,SootMethod> linkmap = new HashMap<>();
+    static HashMap<String,ArrayList<String>> linkmap = new HashMap<>();
+    static HashMap<String,Type> return_types = new HashMap<>();
     static ArrayList<SootMethod> targetmethods = new ArrayList<>();
 
+
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+//        String path = sc.next();
+//        String method = sc.next();
+//        int depth = sc.nextInt();
         List<String> argsList = new ArrayList<>(Arrays.asList(args));
         Options.v().set_verbose(false);
         Options.v().set_keep_line_number(true);
+        Options.v().set_whole_program(true);
         String classesDir = "C:\\Users\\USer\\sootrun\\out\\production\\sootrun";
-        String depdir = "C:\\Users\\USer\\sootrun\\src\\testers";
         String newdir = "C:\\Users\\USer\\sootrun\\src";
         System.out.println("Classpath: " + Scene.v().getSootClassPath());
         Scene.v().extendSootClassPath(classesDir);
-        Scene.v().extendSootClassPath(depdir);
         Scene.v().extendSootClassPath(newdir);
+
         System.out.println("Classpath: " + Scene.v().getSootClassPath());
-
-        argsList.addAll(Arrays.asList("-w",
- //            "-main-class",
-              "testers.CallGraphs",
-              "testers.CallGraphs",
-                "testers.A"
-
-        ));
-         PackManager.v().getPack("wjtp").add(new Transform("wjtp.myTrans", new SceneTransformer() {
-
-            @Override
-            protected void internalTransform(String phaseName, Map options) {
-                CHATransformer.v().transform();
-                //SootClass c = Scene.v().getSootClass("testers.A");
-                SootClass c = Scene.v().forceResolve("com.google.common.base.Splitter", SootClass.BODIES);
-                c.setApplicationClass();
-                Scene.v().loadNecessaryClasses();
-                SootMethod src = c.getMethodByName("bar");
-                System.out.println(Scene.v().getEntryPoints());
-                Scene.v().getEntryPoints().add(src);
-                  List entryPoints = new ArrayList();
-                entryPoints.add(src);
-                Scene.v().setEntryPoints(entryPoints);
-                System.out.println(Scene.v().getEntryPoints());
-                PackManager.v().runPacks();
-//                SootClass c = Scene.v().getSootClass("testers.CallGraphs");
-//                SootMethod src = c.getMethodByName("main");
-                CallGraph cg = Scene.v().getCallGraph();
-                //System.out.println(cg);
-                recurse(cg,src,2,0);
-                for (SootMethod method : targetmethods) {
-                    System.out.println(method);
-                }
-
-                for (Map.Entry<SootMethod, SootMethod> pair : linkmap.entrySet()) {
-                    System.out.println(pair.getKey().getName() + " -> " + pair.getValue().getName());
-                }
+        SootClass c = Scene.v().forceResolve("com.google.common.math.PairedStats", SootClass.BODIES);
+        c.setApplicationClass();
+        Scene.v().loadNecessaryClasses();
+        SootMethod src = c.getMethodByName("populationCovariance");
+        Scene.v().getEntryPoints().add(src);
+        List entryPoints = new ArrayList();
+        entryPoints.add(src);
+        Scene.v().setEntryPoints(entryPoints);
+        PackManager.v().getPack("cg").apply();
+        CallGraph cg = Scene.v().getCallGraph();
+        recurse(cg,src,2,0);
+        for (Map.Entry<String,ArrayList<String>> pair : linkmap.entrySet()) {
+            for (String m: pair.getValue()){
+                System.out.println(pair.getKey() + " -> " + m);
             }
-
-        }));
+        }
+        for (Map.Entry<String,Type> pair: return_types.entrySet()){
+            System.out.println(pair.getKey() + " -> " + pair.getValue());
+        }
         args = argsList.toArray(new String[0]);
         soot.Main.main(args);
-    }
+     }
 
     public static void recurse(CallGraph cg, SootMethod src, int k,int temp){
-
-
         Iterator<MethodOrMethodContext> targets = new Targets(cg.edgesOutOf(src));
-        System.out.println(targets.hasNext());
         while (targets.hasNext() && temp<=k) {
-            System.out.println(111);
             SootMethod tgt = (SootMethod)targets.next();
-            System.out.println(src + " may call " + tgt);
-            if(!targetmethods.contains(tgt.getName())){
+            //System.out.println(src.getDeclaration() + " may call " + tgt.getDeclaration());
+            if(!targetmethods.contains(tgt.getName())) {
                 targetmethods.add(tgt);
-                linkmap.put(src,tgt);
-                //System.out.println(tgt.getDeclaration());
-                //System.out.println("tYPE "+ tgt.getParameterTypes())
             }
+            if(!linkmap.containsKey(src.getDeclaration())){
+                linkmap.put(src.getDeclaration(),new ArrayList<>());
+            }
+            linkmap.get(src.getDeclaration()).add(tgt.getDeclaration());
+            return_types.put(tgt.getDeclaration(), tgt.getReturnType());
 
             temp++;
-           // recurse(cg,tgt,k,temp);
         }
     }
 
