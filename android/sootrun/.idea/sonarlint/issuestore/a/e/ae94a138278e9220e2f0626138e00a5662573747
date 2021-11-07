@@ -1,0 +1,16 @@
+
+t	java:S135Â"YReduce the total number of break and continue statements in this loop to use at most one.(Ğ§ªßùÿÿÿÿ
+D
+java:S1604’"(Make this anonymous inner class a lambda(ÅÊèÓùÿÿÿÿ
+D
+java:S1604²"(Make this anonymous inner class a lambda(ÅÊèÓùÿÿÿÿ
+D
+java:S1604å"(Make this anonymous inner class a lambda(ÅÊèÓùÿÿÿÿ
+D
+java:S1604Ÿ"(Make this anonymous inner class a lambda(ÅÊèÓùÿÿÿÿ
+R
+java:S1119º";Refactor the code to remove this label and the need for it.(Í¥Ó‡
+I
+java:S1135ò"2Complete the task associated to this TODO comment.(î·Üû
+n
+java:S3776»"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(Óæöıûÿÿÿÿ
