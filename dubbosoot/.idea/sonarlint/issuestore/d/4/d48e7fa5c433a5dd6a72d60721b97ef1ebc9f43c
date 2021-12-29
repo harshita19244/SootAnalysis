@@ -1,0 +1,11 @@
+
+Z
+java:S1226"AIntroduce a new variable instead of reusing the parameter "args".(Î¯òÈøÿÿÿÿ
+E
+java:S1128"1Remove this unused import 'soot.options.Options'.(šÆãó
+O	java:S125"<This block of commented-out lines of code should be removed.(ÒãŞº
+N
+java:S1854"5Remove this useless assignment to local variable "a".(Ç¨şôùÿÿÿÿ
+Q	java:S106"9Replace this use of System.out or System.err by a logger.(àÕüùÿÿÿÿ
+?
+java:S1481"&Remove this unused "a" local variable.(Ç¨şôùÿÿÿÿ

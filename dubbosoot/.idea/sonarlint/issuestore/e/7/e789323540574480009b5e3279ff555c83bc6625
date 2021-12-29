@@ -1,0 +1,9 @@
+
+7
+java:S47386"!Use "java.util.Optional" instead.(ö”
+E
+java:S4738;"*Use "java.util.function.Supplier" instead.(à•Ìóûÿÿÿÿ
+E
+java:S4738L"*Use "java.util.function.Function" instead.(°İ¬ıÿÿÿÿ
+B
+java:S4738N"'Use "java.util.Optional.empty" instead.(ŠâÃ£şÿÿÿÿ

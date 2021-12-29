@@ -1,0 +1,11 @@
+
+B
+java:S1905™"+Remove this unnecessary cast to "Ordering".( «ã¬
+u
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ú‘Î£ùÿÿÿÿ
+L
+java:S1133½"5Do not forget to remove this deprecated code someday.(”‡Ò˜
+_
+java:S1123»"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+o
+java:S2234Ø"XParameters to create have the same names but not the same order as the method arguments.(°¡òÈ

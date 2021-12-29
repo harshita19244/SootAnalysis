@@ -1,0 +1,16 @@
+dubbo-config-api=org.apache.dubbo.config.ConfigScopeModelInitializer
+
+dubbo-config-spring=org.apache.dubbo.config.spring.SpringScopeModelInitializer
+
+dubbo-cluster=org.apache.dubbo.rpc.cluster.ClusterScopeModelInitializer
+
+dubbo-common=org.apache.dubbo.common.CommonScopeModelInitializer
+
+dubbo-remoting-api=org.apache.dubbo.remoting.RemotingScopeModelInitializer
+
+dubbo-registry-api=org.apache.dubbo.registry.RegistryScopeModelInitializer
+
+qos=org.apache.dubbo.qos.QosScopeModelInitializer
+
+dubbo-metadata-api=org.apache.dubbo.metadata.report.MetadataScopeModelInitializer
+
