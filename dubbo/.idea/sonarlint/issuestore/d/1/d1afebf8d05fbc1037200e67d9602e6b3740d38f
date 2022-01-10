@@ -1,0 +1,17 @@
+
+V
+java:S1854";Remove this useless assignment to local variable "console".(¡•Àşÿÿÿÿ
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(¡ éŸ
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ªï²è
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¡•Àşÿÿÿÿ
+\	java:S899 "BDo something with the "boolean" value returned by "createNewFile".(’ƒ™òùÿÿÿÿ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(—ñï‚øÿÿÿÿ
+]	java:S125#"<This block of commented-out lines of code should be removed.(ÿ‘Û¼ùÿÿÿÿ8Ê‰ùÅ/
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(›æŒÁ
+U	java:S106&"9Replace this use of System.out or System.err by a logger.(¦œÉá8á¾³ùÅ/
+P
+java:S3984/"5Throw this exception or remove this useless statement(°õ‚øÿÿÿÿ
+G
+java:S1481",Remove this unused "console" local variable.(¡•Àşÿÿÿÿ

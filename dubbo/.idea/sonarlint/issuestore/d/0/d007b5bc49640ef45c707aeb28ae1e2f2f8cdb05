@@ -1,0 +1,68 @@
+
+T	java:S107"<Method has 8 parameters, which is greater than 7 authorized.(ÂÒÿÚşÿÿÿÿ
+O	java:S107"<Method has 9 parameters, which is greater than 7 authorized.(°°Šü
+P	java:S107"=Method has 10 parameters, which is greater than 7 authorized.(®ÈÒú
+P	java:S107"=Method has 11 parameters, which is greater than 7 authorized.(®ÈÒú
+P	java:S107"=Method has 13 parameters, which is greater than 7 authorized.(®ÈÒú
+m
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ñã¬
+F
+java:S1135"2Complete the task associated to this TODO comment.(œåƒª
+6
+java:S4738""Use "java.util.List.of()" instead.(¸ØÑÂ
+6
+java:S4738""Use "java.util.List.of()" instead.(¤ò
+6
+java:S4738""Use "java.util.List.of()" instead.(¸ØÑÂ
+;
+java:S4738""Use "java.util.List.of()" instead.(êïŞ¨ûÿÿÿÿ
+6
+java:S4738""Use "java.util.List.of()" instead.(¸ØÑÂ
+;
+java:S4738""Use "java.util.List.of()" instead.(™ğ›Öùÿÿÿÿ
+r
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(²®¹ùÿÿÿÿ
+6
+java:S4738""Use "java.util.List.of()" instead.(¸ØÑÂ
+;
+java:S4738""Use "java.util.List.of()" instead.(›‚ªÊûÿÿÿÿ
+?
+java:S2160"+Override the "equals" method in this class.(æËî»
+I
+java:S1133"5Do not forget to remove this deprecated code someday.(ã”¹µ
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+I
+java:S1133"5Do not forget to remove this deprecated code someday.(ßË…
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+N
+java:S1133"5Do not forget to remove this deprecated code someday.(¤È“Åøÿÿÿÿ
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+I
+java:S1133"5Do not forget to remove this deprecated code someday.(€³Æ
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+N
+java:S1133"5Do not forget to remove this deprecated code someday.(ÿß‡Ìøÿÿÿÿ
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+I
+java:S1133"5Do not forget to remove this deprecated code someday.(ñ»Š¼
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+I
+java:S1133"5Do not forget to remove this deprecated code someday.(å’å§
+\
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš
+m
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥ŞÒ‚
+>
+java:S2160"+Override the "equals" method in this class.(çÙö
+C
+java:S1948"*Make "elements" transient or serializable.(ªÎˆ÷úÿÿÿÿ
+r
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(È°†Íşÿÿÿÿ
+m
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‹ÑŞñ

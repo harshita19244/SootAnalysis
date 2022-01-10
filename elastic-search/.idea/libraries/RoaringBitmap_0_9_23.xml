@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RoaringBitmap-0.9.23">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../lib/RoaringBitmap-0.9.23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

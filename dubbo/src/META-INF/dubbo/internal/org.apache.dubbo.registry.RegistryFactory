@@ -1,0 +1,10 @@
+service-discovery-registry=org.apache.dubbo.registry.client.ServiceDiscoveryRegistryFactory
+wrapper=org.apache.dubbo.registry.RegistryFactoryWrapper
+multicast=org.apache.dubbo.registry.multicast.MulticastRegistryFactory
+zookeeper=org.apache.dubbo.registry.zookeeper.ZookeeperRegistryFactory
+nacos=org.apache.dubbo.registry.nacos.NacosRegistryFactory
+multiple=org.apache.dubbo.registry.multiple.MultipleRegistryFactory
+
+kubernetes=org.apache.dubbo.registry.kubernetes.KubernetesRegistryFactory
+dns=org.apache.dubbo.registry.dns.DNSRegistryFactory
+xds=org.apache.dubbo.registry.xds.XdsRegistryFactory

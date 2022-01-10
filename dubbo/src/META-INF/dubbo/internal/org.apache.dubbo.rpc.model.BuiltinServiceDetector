@@ -1,0 +1,4 @@
+echo=org.apache.dubbo.rpc.service.EchoServiceDetector
+generic=org.apache.dubbo.rpc.service.GenericServiceDetector
+monitor=org.apache.dubbo.monitor.support.MonitorServiceDetector
+metrics=org.apache.dubbo.monitor.support.MetricsServiceDetector

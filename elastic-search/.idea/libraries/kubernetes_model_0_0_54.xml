@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="kubernetes-model-0.0.54">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../lib/kubernetes-model-0.0.54.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,25 @@
+
+?
+java:S1604ÿ"(Make this anonymous inner class a lambda(Ÿ«¥¡
+?
+java:S1604‡"(Make this anonymous inner class a lambda(Ÿ«¥¡
+?
+java:S1604‘"(Make this anonymous inner class a lambda(¡ÅÊ
+u
+java:S2293¦"YReplace the type specification in this constructor call with the diamond operator ("<>").(’©‹¶ûÿÿÿÿ
+u
+java:S2293¬"YReplace the type specification in this constructor call with the diamond operator ("<>").(æÁ†´ıÿÿÿÿ
+u
+java:S2293­"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ğ¸Î¤ùÿÿÿÿ
+A
+java:S4738´"*Use "java.util.function.Function" instead.(¥´û
+i
+java:S3776’"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(øŸÛ‘
+i
+java:S3776Ä"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(åèÇ¬
+h
+java:S3776ö"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(˜…¤G
+E
+java:S1905Ì")Remove this unnecessary cast to "Object".(õŠ¡€şÿÿÿÿ
+N
+java:S1135ö"2Complete the task associated to this TODO comment.(Öµ€úÿÿÿÿ

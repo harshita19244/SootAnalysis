@@ -1,0 +1,19 @@
+
+P
+java:S1133"5Do not forget to remove this deprecated code someday.(šóıÌ8à£ø˜¾/
+c
+java:S1123"HAdd 'since' and/or 'forRemoval' arguments to the @Deprecated annotation.(õˆúš8à£ø˜¾/
+E
+java:S4738"*Use "java.util.function.Function" instead.(Š¢®à8ã£ø˜¾/
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(©Ë¥8ä£ø˜¾/
+A
+java:S1948"-Make "equivalence" transient or serializable.(ø¤”
+`
+java:S1117"@Rename "equivalence" which hides the field declared at line 192.(şÌıîûÿÿÿÿ8é£ø˜¾/
+y
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÎŒ¢ìøÿÿÿÿ8í£ø˜¾/
+M
+java:S1948"-Make "equivalence" transient or serializable.(¹ÜÖÑşÿÿÿÿ8î£ø˜¾/
+<
+java:S1948"(Make "target" transient or serializable.(ÇÙ

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dubbo-2.6.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../lib/dubbo-2.6.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
