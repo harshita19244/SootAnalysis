@@ -1,8 +1,0 @@
-default=org.apache.dubbo.registry.client.DefaultServiceDiscoveryFactory
-multicast=org.apache.dubbo.registry.multicast.MulticastServiceDiscoveryFactory
-zookeeper=org.apache.dubbo.registry.zookeeper.ZookeeperServiceDiscoveryFactory
-nacos=org.apache.dubbo.registry.nacos.NacosServiceDiscoveryFactory
-multiple=org.apache.dubbo.registry.multiple.MultipleServiceDiscoveryFactory
-kubernetes=org.apache.dubbo.registry.kubernetes.KubernetesServiceDiscoveryFactory
-dns=org.apache.dubbo.registry.dns.DNSServiceDiscoveryFactory
-xds=org.apache.dubbo.registry.xds.XdsServiceDiscoveryFactory

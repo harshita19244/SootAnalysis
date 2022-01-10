@@ -1,8 +1,0 @@
-file=org.apache.dubbo.registry.client.FileSystemServiceDiscovery
-multicast=org.apache.dubbo.registry.multicast.MulticastServiceDiscovery
-zookeeper=org.apache.dubbo.registry.zookeeper.ZookeeperServiceDiscovery
-nacos=org.apache.dubbo.registry.nacos.NacosServiceDiscovery
-multiple=org.apache.dubbo.registry.multiple.MultipleServiceDiscovery
-kubernetes=org.apache.dubbo.registry.kubernetes.KubernetesServiceDiscovery
-dns=org.apache.dubbo.registry.dns.DNSServiceDiscovery
-xds=org.apache.dubbo.registry.xds.XdsServiceDiscovery
