@@ -2,9 +2,11 @@ import soot.*;
 import soot.jimple.toolkits.callgraph.CallGraph;
 import soot.jimple.toolkits.callgraph.Targets;
 import soot.options.Options;
+
+import java.io.*;
 import java.util.*;
 
-class Pair{
+class Pair implements Serializable{
     private String method_name;
     private String declaring_class;
 
@@ -23,10 +25,7 @@ class Pair{
 }
 public class CallGraphExample
 {
-    static HashMap<String,ArrayList<String>> linkmap = new HashMap<>();
-    static HashMap<SootMethod,Pair> targetmethods = new HashMap<>();
-
-
+    static HashMap<String,ArrayList<Pair>> linkage_graph = new HashMap();
     public static void main(String[] args) {
         List<String> argsList = new ArrayList<>(Arrays.asList(args));
         Options.v().set_verbose(false);
@@ -37,39 +36,85 @@ public class CallGraphExample
         System.out.println("Classpath: " + Scene.v().getSootClassPath());
         Scene.v().extendSootClassPath("C:\\Users\\USer\\glide\\src");
         System.out.println("Classpath: " + Scene.v().getSootClassPath());
-        SootClass c = Scene.v().forceResolve("com.bumptech.glide.util.Executors", SootClass.BODIES);
-        c.setApplicationClass();
-        Scene.v().loadNecessaryClasses();
-        Scene.v().loadNecessaryClasses();
-        SootMethod src = c.getMethodByName("shutdownAndAwaitTermination");
-        Scene.v().getEntryPoints().add(src);
-        List entryPoints = new ArrayList();
-        entryPoints.add(src);
-        Scene.v().setEntryPoints(entryPoints);
-        PackManager.v().getPack("cg").apply();
-        CallGraph cg = Scene.v().getCallGraph();
-        recurse(cg,src,4,0);
-        System.out.println("Linkage graph given source method");
-        for (Map.Entry<String,ArrayList<String>> pair : linkmap.entrySet()) {
-            System.out.println(pair.getKey() + " -> ");
-            for (String m: pair.getValue()){
-                System.out.print(m + ", ");
+
+        int count= 0;
+        try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\USer\\Desktop\\glide\\out.txt"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                HashMap<String,ArrayList<Pair>> linkmap = new HashMap<>();
+                int idx = line.indexOf("java");
+                int endidx = line.indexOf(".java");
+                int midx = line.indexOf("(");
+                String cp = line.substring(idx+5,endidx);
+                String m = line.substring(0,midx-1);
+                cp = cp.replace('\\','.');
+                System.out.println(cp);
+                SootClass c = Scene.v().forceResolve(cp, SootClass.BODIES);
+                c.setApplicationClass();
+                Scene.v().loadNecessaryClasses();
+                Scene.v().loadNecessaryClasses();
+                System.out.println(m);
+                try{
+                    SootMethod src = c.getMethodByName(m);
+                    Scene.v().getEntryPoints().add(src);
+                    List entryPoints = new ArrayList();
+                    entryPoints.add(src);
+                    Scene.v().setEntryPoints(entryPoints);
+                    PackManager.v().getPack("cg").apply();
+                    CallGraph cg = Scene.v().getCallGraph();
+                    recurse(cg,src,4,0,linkmap);
+                    System.out.println("Linkage graph given source method");
+                    for (Map.Entry<String,ArrayList<Pair>> element : linkmap.entrySet()) {
+                        linkage_graph.put(element.getKey(), element.getValue());
+//                    System.out.println(element.getKey() + " -> ");
+//                    for (Pair s: element.getValue()){
+//                        System.out.println("Method name: " + s.getMethod_name().replace("java.lang.",""));
+//                        System.out.println("Declaring class: "+ s.getDeclaring_class());
+//
+//                    }
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+
+//                System.out.println();
+//                System.out.println();
+//                System.out.println("Target methods with dependency");
+//
+//                System.out.println();
+
+
             }
-        }
-        System.out.println();
-        System.out.println();
-        System.out.println("Target methods with dependency");
-        for (Map.Entry<SootMethod,Pair> s: targetmethods.entrySet()){
-            System.out.println("Method name: " + s.getValue().getMethod_name().replace("java.lang.",""));
-            System.out.println("Declaring class: "+ s.getValue().getDeclaring_class());
+            try {
+                FileOutputStream myFileOutStream = new FileOutputStream("C:\\Users\\USer\\glide\\link.txt");
+                ObjectOutputStream myObjectOutStream = new ObjectOutputStream(myFileOutStream);
+                myObjectOutStream.writeObject(linkage_graph);
+                for (Map.Entry<String,ArrayList<Pair>> element : linkage_graph.entrySet()) {
+                    System.out.println("Source name: " + element.getKey());
+                    for (Pair s: element.getValue()){
+                        System.out.println("Method name: " + s.getMethod_name().replace("java.lang.",""));
+                        System.out.println("Declaring class: "+ s.getDeclaring_class());
+
+                    }
+                }
+                // closing FileOutputStream and
+                // ObjectOutputStream
+                myObjectOutStream.close();
+                myFileOutStream.close();
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        System.out.println();
         args = argsList.toArray(new String[0]);
         soot.Main.main(args);
     }
 
-    public static void recurse(CallGraph cg, SootMethod src, int k,int temp){
+    public static void recurse(CallGraph cg, SootMethod src, int k,int temp,HashMap<String,ArrayList<Pair>> linkmap){
         Iterator targets = new Targets(cg.edgesOutOf(src));
         List<String> method_names = new ArrayList<>();
         while (targets.hasNext() && temp<=k) {
@@ -79,35 +124,35 @@ public class CallGraphExample
             if(!linkmap.containsKey(src.getDeclaration())){
                 linkmap.put(src.getDeclaration(),new ArrayList<>());
             }
-            if(tgt.getDeclaringClass().getName().contains("org.elasticsearch")) {
-                targetmethods.put(tgt, new Pair(tgt.getDeclaration(),tgt.getDeclaringClass().getName()));
-            }
-            if(!method_names.contains(tgt.getName())){
+
+            if(!method_names.contains(tgt.getName()) && tgt.getDeclaringClass().getName().contains("com.bumptech")){
                 method_names.add(tgt.getName());
-                linkmap.get(src.getDeclaration()).add(tgt.getDeclaration());
+                linkmap.get(src.getDeclaration()).add(new Pair(tgt.getDeclaration(),tgt.getDeclaringClass().getName()));
                 temp++;
             }
         }
     }
 
-    public static void recurseback(CallGraph cg, SootMethod src, int k,int temp){
-        Iterator targets = new Targets(cg.edgesInto(src));
-        List<String> method_names = new ArrayList<>();
-        while (targets.hasNext() && temp<=k) {
-            SootMethod tgt = (SootMethod)targets.next();
-            //System.out.println(tgt.getName());
-            //System.out.println(src.getDeclaration() + " may call " + tgt.getDeclaringClass() + " " + tgt.getReturnType() );
-            if(!linkmap.containsKey(src.getDeclaration())){
-                linkmap.put(src.getDeclaration(),new ArrayList<>());
-            }
-            if(tgt.getDeclaringClass().getName().contains("org.elasticsearch")) {
-                targetmethods.put(tgt, new Pair(tgt.getDeclaration(),tgt.getDeclaringClass().getName()));
-            }
-            if(!method_names.contains(tgt.getName())){
-                method_names.add(tgt.getName());
-                linkmap.get(src.getDeclaration()).add(tgt.getDeclaration());
-                temp++;
-            }
-        }
-    }
+//    public static void recurseback(CallGraph cg, SootMethod src, int k,int temp){
+//        Iterator targets = new Targets(cg.edgesInto(src));
+//        List<String> method_names = new ArrayList<>();
+//        while (targets.hasNext() && temp<=k) {
+//            SootMethod tgt = (SootMethod)targets.next();
+//            //System.out.println(tgt.getName());
+//            //System.out.println(src.getDeclaration() + " may call " + tgt.getDeclaringClass() + " " + tgt.getReturnType() );
+//            if(!linkmap.containsKey(src.getDeclaration())){
+//                linkmap.put(src.getDeclaration(),new ArrayList<>());
+//            }
+//            if(tgt.getDeclaringClass().getName().contains("org.elasticsearch")) {
+//                targetmethods.put(tgt, new Pair(tgt.getDeclaration(),tgt.getDeclaringClass().getName()));
+//            }
+//            if(!method_names.contains(tgt.getName())){
+//                method_names.add(tgt.getName());
+//                linkmap.get(src.getDeclaration()).add(tgt.getDeclaration());
+//                temp++;
+//            }
+//        }
+//    }
 }
+
+//link graph s.t src calls sink and each of target calls src.
