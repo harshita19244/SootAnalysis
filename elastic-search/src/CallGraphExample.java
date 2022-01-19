@@ -35,7 +35,7 @@ public class CallGraphExample
         Options.v().set_allow_phantom_refs(true);
         Options.v().set_no_bodies_for_excluded(true);
         System.out.println("Classpath: " + Scene.v().getSootClassPath());
-        Scene.v().extendSootClassPath("C:\\Users\\USer\\static\\src");
+        Scene.v().extendSootClassPath("C:\\Users\\USer\\elastic-search\\src");
         System.out.println("Classpath: " + Scene.v().getSootClassPath());
         SootClass c = Scene.v().forceResolve("org.elasticsearch.cluster.ClusterChangedEvent", SootClass.BODIES);
         c.setApplicationClass();
