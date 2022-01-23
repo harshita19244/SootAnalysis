@@ -5,6 +5,8 @@ import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.google.common.base.Strings;
 
 import java.io.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Iterate over the classes and print their Javadoc comments corresponding to each method.
@@ -12,15 +14,15 @@ import java.io.*;
 public class AllJavaDocExtracter {
 
     public static void main(String[] args) throws IOException {
-        String pathname = "C:\\Users\\USer\\Desktop\\guava\\guava\\src\\com\\google\\common";
-        File output = new File("C:\\Users\\USer\\Desktop\\guava\\output.txt");
+        String pathname = "C:\\Users\\USer\\Desktop\\guava\\android\\guava";
+        File output = new File("C:\\Users\\USer\\Desktop\\guava\\android\\guava\\outnew2.txt");
         File projectDir = new File(pathname);
         PrintStream o = new PrintStream(output);
         // Store current System.out before assigning a new value
         PrintStream console = System.out;
         // Assign o to output stream
         System.setOut(o);
-
+        //HashSet <String> m = new HashSet<>();
         new DirExplorer((level, path, file) -> path.endsWith(".java"), (level, path, file) -> {
             try {
                 CompilationUnit cu = StaticJavaParser.parse(file);
@@ -30,14 +32,14 @@ public class AllJavaDocExtracter {
                         super.visit(n, arg);
                         try {
                             output.createNewFile();
-                            if (n.getComment().isPresent()){
-                                String title = String.format("%s (%s)", n.getDeclarationAsString(), file);
-                                //System.out.println(n.getName());
-                                System.out.println(Strings.repeat("=", title.length()));
+                            String name = n.getNameAsString();
+                            String type = String.valueOf(n.getType());
+                            String parameters = String.valueOf(n.getParameters());
+                            if (n.isMethodDeclaration()) {
+                                String title = String.format("%s {%s} %s (%s)", name, type, parameters, file);
                                 System.out.println(title);
-                                System.out.println(n.getComment());
                             }
-                        } catch(IOException e){
+                        } catch (IOException e) {
                             e.printStackTrace();
                         }
                     }
