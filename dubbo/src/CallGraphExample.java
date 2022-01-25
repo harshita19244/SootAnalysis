@@ -35,7 +35,7 @@ public class CallGraphExample
         Options.v().set_whole_program(true);
         Options.v().set_allow_phantom_refs(true);
         System.out.println("Classpath: " + Scene.v().getSootClassPath());
-        Scene.v().extendSootClassPath("C:\\Users\\USer\\sootrun2\\src");
+        Scene.v().extendSootClassPath("C:\\Users\\USer\\dubbo\\src");
         System.out.println("Classpath: " + Scene.v().getSootClassPath());
         SootClass c = Scene.v().forceResolve("org.apache.dubbo.common.beans.factory.ScopeBeanFactory", SootClass.BODIES);
         c.setApplicationClass();
