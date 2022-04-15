@@ -35,13 +35,13 @@ public class CallGraphExample
         Options.v().set_whole_program(true);
         Options.v().set_allow_phantom_refs(true);
         System.out.println("Classpath: " + Scene.v().getSootClassPath());
-        Scene.v().extendSootClassPath("C:\\Users\\USer\\sootrun2\\src");
+        Scene.v().extendSootClassPath("C:\\Users\\USer\\dubbo\\src");
         System.out.println("Classpath: " + Scene.v().getSootClassPath());
-        SootClass c = Scene.v().forceResolve("org.apache.dubbo.common.beans.factory.ScopeBeanFactory", SootClass.BODIES);
+        SootClass c = Scene.v().forceResolve("org.apache.dubbo.common.extension.AdaptiveClassCodeGenerator", SootClass.BODIES);
         c.setApplicationClass();
         Scene.v().loadNecessaryClasses();
         Scene.v().loadNecessaryClasses();
-        SootMethod src = c.getMethodByName("createAndRegisterBean");
+        SootMethod src = c.getMethodByName("hasAdaptiveMethod");
         Scene.v().getEntryPoints().add(src);
         List entryPoints = new ArrayList();
         entryPoints.add(src);

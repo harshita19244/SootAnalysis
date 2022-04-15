@@ -43,10 +43,10 @@ public class CallGraphExample
         System.out.println("Classpath: " + Scene.v().getSootClassPath());
         Scene.v().extendSootClassPath(classesDir);
         Scene.v().extendSootClassPath(newdir);
-        SootClass c = Scene.v().forceResolve("com.google.common.cache.CacheBuilder", SootClass.BODIES);
+        SootClass c = Scene.v().forceResolve("com.google.common.collect.TopKSelector", SootClass.BODIES);
         c.setApplicationClass();
         Scene.v().loadNecessaryClasses();
-        SootMethod src = c.getMethodByName("expireAfterAccess");
+        SootMethod src = c.getMethodByName("TopKSelector");
         Scene.v().getEntryPoints().add(src);
         List entryPoints = new ArrayList();
         entryPoints.add(src);

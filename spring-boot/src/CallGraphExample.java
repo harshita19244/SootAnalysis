@@ -35,13 +35,13 @@ public class CallGraphExample
         Options.v().set_allow_phantom_refs(true);
         Options.v().set_no_bodies_for_excluded(true);
         System.out.println("Classpath: " + Scene.v().getSootClassPath());
-        Scene.v().extendSootClassPath("C:\\Users\\USer\\spring-boot\\src");
+        Scene.v().extendSootClassPath("C:\\Users\\harsh\\spring-boot\\src");
         System.out.println("Classpath: " + Scene.v().getSootClassPath());
-        SootClass c = Scene.v().forceResolve("org.springframework.boot.web.client.RestTemplateBuilder", SootClass.BODIES);
+        SootClass c = Scene.v().forceResolve("org.springframework.boot.actuate.listener.AuditListener", SootClass.BODIES);
         c.setApplicationClass();
         Scene.v().loadNecessaryClasses();
         Scene.v().loadNecessaryClasses();
-        SootMethod src = c.getMethodByName("setBufferRequestBody");
+        SootMethod src = c.getMethodByName("getIdle");
         Scene.v().getEntryPoints().add(src);
         List entryPoints = new ArrayList();
         entryPoints.add(src);

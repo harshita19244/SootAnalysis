@@ -86,26 +86,26 @@ public class CallGraphExample
 
 
             }
-            try {
-                FileOutputStream myFileOutStream = new FileOutputStream("C:\\Users\\USer\\glide\\link.txt");
-                ObjectOutputStream myObjectOutStream = new ObjectOutputStream(myFileOutStream);
-                myObjectOutStream.writeObject(linkage_graph);
-                for (Map.Entry<String,ArrayList<Pair>> element : linkage_graph.entrySet()) {
-                    System.out.println("Source name: " + element.getKey());
-                    for (Pair s: element.getValue()){
-                        System.out.println("Method name: " + s.getMethod_name().replace("java.lang.",""));
-                        System.out.println("Declaring class: "+ s.getDeclaring_class());
-
-                    }
-                }
-                // closing FileOutputStream and
-                // ObjectOutputStream
-                myObjectOutStream.close();
-                myFileOutStream.close();
-            }
-            catch (IOException e) {
-                e.printStackTrace();
-            }
+//            try {
+//                FileOutputStream myFileOutStream = new FileOutputStream("C:\\Users\\USer\\glide\\link.txt");
+//                ObjectOutputStream myObjectOutStream = new ObjectOutputStream(myFileOutStream);
+//                myObjectOutStream.writeObject(linkage_graph);
+//                for (Map.Entry<String,ArrayList<Pair>> element : linkage_graph.entrySet()) {
+//                    System.out.println("Source name: " + element.getKey());
+//                    for (Pair s: element.getValue()){
+//                        System.out.println("Method name: " + s.getMethod_name().replace("java.lang.",""));
+//                        System.out.println("Declaring class: "+ s.getDeclaring_class());
+//
+//                    }
+//                }
+//                // closing FileOutputStream and
+//                // ObjectOutputStream
+//                myObjectOutStream.close();
+//                myFileOutStream.close();
+//            }
+//            catch (IOException e) {
+//                e.printStackTrace();
+//            }
         } catch (IOException e) {
             e.printStackTrace();
         }

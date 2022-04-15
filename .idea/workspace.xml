@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10308625-776a-4ec2-a8c8-327051895670" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dubbo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elastic-search/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-framework/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo/.idea/libraries/checker_qual_3_17_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo/.idea/libraries/error_prone_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo/.idea/libraries/javaparser_core_3_14_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo/.idea/libraries/javaparser_core_3_14_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo/.idea/libraries/jsr305_1_3_9_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo/.idea/libraries/soot_4_2_1_jar_with_dependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo/.idea/libraries/soot_4_2_1_jar_with_dependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo/.idea/libraries/spring_boot_2_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo/out/production/sootrun/CallGraphExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo/out/production/sootrun/CallGraphExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo/sootrun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo/sootrun.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo/src/CallGraphExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo/src/CallGraphExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elastic-search/.idea/libraries/grpc_api_1_31_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elastic-search/.idea/libraries/soot_4_2_1_jar_with_dependencies.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/elastic-search/out/production/static/CallGraphExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/elastic-search/out/production/static/CallGraphExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elastic-search/src/CallGraphExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/elastic-search/src/CallGraphExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elastic-search/static.iml" beforeDir="false" afterPath="$PROJECT_DIR$/elastic-search/static.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/glide/src/CallGraphExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/glide/src/CallGraphExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/.idea/libraries/soot_4_2_1_jar_with_dependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/.idea/libraries/soot_4_2_1_jar_with_dependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/out/production/spring-boot/CallGraphExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/out/production/spring-boot/CallGraphExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/spring-boot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/spring-boot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/CallGraphExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/CallGraphExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework/.idea/libraries/jsr305_1_3_9_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework/.idea/libraries/soot_4_2_1_jar_with_dependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-framework/.idea/libraries/soot_4_2_1_jar_with_dependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-framework/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework/out/production/sootrun/AllJavaDocExtracter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework/out/production/sootrun/AllJavaDocExtracter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework/out/production/sootrun/CallGraphExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework/out/production/sootrun/DirExplorer$FileHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework/out/production/sootrun/DirExplorer$Filter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework/out/production/sootrun/DirExplorer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework/out/production/sootrun/Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework/sootrun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-framework/sp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-framework/src/CallGraphExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-framework/src/CallGraphExample.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="24SYGY5euC8QqCBWa4Z4Kqkj1tv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10308625-776a-4ec2-a8c8-327051895670" name="Changes" comment="" />
+      <created>1643625365929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643625365929</updated>
+    </task>
+    <servers />
+  </component>
+</project>
